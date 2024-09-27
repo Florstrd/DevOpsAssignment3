@@ -15,7 +15,7 @@ public class PersonTest {
     @Test
     public void testWrongInput() {
         Person testPerson = new Person("Pete");
-        Assert.assertEquals("[John, Emily, Michael, Sarah, David, Jessica, James, Sophia, Daniel, Olivia]", Arrays.toString(testPerson.getFriends("Peter")));
+        Assert.assertEquals("[No friends for that person]", Arrays.toString(testPerson.getFriends("Peter")));
     }
 
 }

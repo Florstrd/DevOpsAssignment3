@@ -5,6 +5,7 @@ import java.util.Objects;
 public class Person {
     String name;
     public String[] getFriends(String name) {
+        String[] empty = {"No friends for that person"};
         if (Objects.equals(name, "John")) {
             return johnFriends;
         }
@@ -14,7 +15,7 @@ public class Person {
         if (Objects.equals(name, "Pete")) {
             return peteFriends;
         }
-        else return null;
+        else return empty;
     }
 
     String[] peteFriends = {"John", "Emily", "Michael", "Sarah", "David", "Jessica", "James", "Sophia", "Daniel", "Olivia"};
